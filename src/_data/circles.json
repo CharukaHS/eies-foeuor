@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Electronic",
+    "link": "electronic",
+    "order": 1,
+    "banner": "tronic.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut odit ut aliquam quibusdam velit est earum blanditiis nihil non temporibus accusamus nostrum, quis repellat vero delectus natus reprehenderit! Ex!",
+    "committee": [
+      {
+        "role": "President",
+        "name": "Hansamal Dharmananda",
+        "img": "president.jpg"
+      },
+      {
+        "role": "Secretary",
+        "name": "Malka Hansini",
+        "img": "secretary.jpeg"
+      },
+      {
+        "role": "Editor",
+        "name": "Hasitha C. Gunawardhana",
+        "img": "editor.jpeg"
+      },
+      {
+        "role": "Committee",
+        "name": "Anuradha Geeth Wickramasinghe",
+        "img": "committee1.jpeg"
+      },
+      {
+        "role": "Committee",
+        "name": "Muvindu Winduvara",
+        "img": "committee2.jpeg"
+      },
+      {
+        "role": "Committee",
+        "name": "W.Charitha Maduranga",
+        "img": "committee3.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Power",
+    "link": "power",
+    "order": 2,
+    "banner": "power.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut odit ut aliquam quibusdam velit est earum blanditiis nihil non temporibus accusamus nostrum, quis repellat vero delectus natus reprehenderit! Ex!",
+    "committee": [
+      {
+        "role": "President",
+        "name": "T.G Thilina Supunthara",
+        "img": "president.jpeg"
+      },
+      {
+        "role": "Secretary",
+        "name": "U.A.N Perera",
+        "img": "secretary.jpeg"
+      },
+      {
+        "role": "Editor",
+        "name": "W.C.N Dayarathna",
+        "img": "editor.jpeg"
+      },
+      {
+        "role": "Committee",
+        "name": "Y.A.A Samarasekara",
+        "img": "committee1.jpeg"
+      },
+      {
+        "role": "Committee",
+        "name": "J.G.D.K Jayawickrama",
+        "img": "committee2.jpeg"
+      },
+      {
+        "role": "Committee",
+        "name": "N.P.P Narangoda",
+        "img": "committee3.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Software",
+    "link": "software",
+    "order": 3,
+    "banner": "soft.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut odit ut aliquam quibusdam velit est earum blanditiis nihil non temporibus accusamus nostrum, quis repellat vero delectus natus reprehenderit! Ex!",
+    "committee": [
+      {
+        "role": "President",
+        "name": "D.R.P Chamal",
+        "img": "president.jpeg"
+      },
+      {
+        "role": "Secretary",
+        "name": "Dilini Gamage",
+        "img": "secretary.jpeg"
+      },
+      {
+        "role": "Editor",
+        "name": "S.B.N.M Sabaragamuwa",
+        "img": "editor.jpeg"
+      },
+      {
+        "role": "Committee",
+        "name": "P.M Jaysinghe",
+        "img": "committee1.jpeg"
+      },
+      {
+        "role": "Committee",
+        "name": "J.K.A.J Kavinda",
+        "img": "committee2.jpeg"
+      },
+      {
+        "role": "Committee",
+        "name": "P.M.S.L Pathiraja",
+        "img": "committee3.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Telecommunication",
+    "link": "tele",
+    "order": 4,
+    "banner": "tele.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut odit ut aliquam quibusdam velit est earum blanditiis nihil non temporibus accusamus nostrum, quis repellat vero delectus natus reprehenderit! Ex!",
+    "committee": [
+      {
+        "role": "President",
+        "name": "P.K.D Chinthaka",
+        "img": "president.jpg"
+      },
+      {
+        "role": "Secretary",
+        "name": "N.M.P.M.Nishshanka ",
+        "img": "secretary.jpg"
+      },
+      {
+        "role": "Editor",
+        "name": "K.B.S.L Indrasiri",
+        "img": "editor.jpg"
+      },
+      {
+        "role": "Committee",
+        "name": "M.T.M Perera",
+        "img": "committee1.jpg"
+      },
+      {
+        "role": "Committee",
+        "name": "W.P. Chathuranga Rivimal Liyanage",
+        "img": "committee2.jpg"
+      },
+      {
+        "role": "Committee",
+        "name": "M.L Moyura",
+        "img": "committee3.jpg"
+      }
+    ]
+  }
+]

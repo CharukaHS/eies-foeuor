@@ -1,0 +1,59 @@
+{
+  "committee": [
+    {
+      "role": "President",
+      "name": "Shashika Bandaranayaka",
+      "img": "president.jpeg"
+    },
+    {
+      "role": "Secretary",
+      "name": "Shavindya Wickramasinghe ",
+      "img": "secretary.jpg"
+    },
+    {
+      "role": "Vice President",
+      "name": "Harith Lakmith",
+      "img": "vice president.jpg"
+    },
+    {
+      "role": "Assistant Secretary",
+      "name": "B.C.H. Wickramathilaka",
+      "img": "assist_secretary.jpeg"
+    },
+    {
+      "role": "Editor",
+      "name": "Preminda Bandara",
+      "img": "editor.jpg"
+    },
+    {
+      "role": "Treasurer",
+      "name": "H.R.M.B Thambawitha",
+      "img": "treasurer.jpeg"
+    },
+    {
+      "role": "Social Secretary",
+      "name": "H.K.I.R Kalhara ",
+      "img": "social_secretary.jpg"
+    },
+    {
+      "role": "Committee",
+      "name": "L.L.G Madhuwantha Priyashan Bandara",
+      "img": "committee1.jpeg"
+    },
+    {
+      "role": "Committee",
+      "name": "S.M.A.T Subasinghe",
+      "img": "committee2.jpeg"
+    },
+    {
+      "role": "Committee",
+      "name": "J.M.V.N Jayarathna",
+      "img": "committee3.jpeg"
+    },
+    {
+      "role": "Committee",
+      "name": "R.W.P.K.T.D Thalgahagoda",
+      "img": "committee4.jpg"
+    }
+  ]
+}
