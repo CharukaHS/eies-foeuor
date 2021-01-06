@@ -1,15 +1,96 @@
 ---
-title: Home
+title: EIES University of Ruhuna
 layout: layouts/base.njk
 ---
-
-<div class="space-y-8">
-
-  <div>
-    <p>This is the project's home page. There is a little styling for demonstration purposes only.</p>
-    <p>The navigation might as well be a sidebar, or a floating menu. This template provides the structure, make it yours ✌️</p>
+<section id="landing" class="flex flex-col w-full h-screen">
+  <div class="flex flex-row items-center justify-center flex-grow">
+    <div class="w-1/2 px-8">
+      {% responsiveimage "./src/images/eies.png",
+      "EIES Logo",
+      "8rem",
+      "w-32 mb-8" %}
+      <h1 class="text-4xl">Electrical and Information Engineering Society</h1>
+      <p>{{eies.test}}</p>
+    </div>
+    <div class="flex w-1/2 h-full px-8">
+      <div
+            class="self-center w-full bg-gray-200 shadow h-4/6 rounded-2xl"
+          ></div>
+    </div>
   </div>
+</section>
 
+<section class="flex flex-col px-8 py-8 text-white bg-blue-700">
+  <div class="mb-4 text-justify" style="text-align-last: center;">
+        Electrical and Information Engineering Society (EIES) is the main society within the department that 
+        consists of the academic staff and students. The academic staff of the department facilitates to EIES 
+        as an advisory board and the students lead each activity organized by the society. The goal of the 
+        Electrical and Information Engineering Society is to upgrade student’s life in the department allowing 
+        them to improve not only academic and technical skills but also their leadership interpersonal and 
+        professional qualities.
+    </div>
+  <div class="flex flex-row flex-wrap self-center justify-around w-5/6">
+    {% for i in eies.committee %}
+      <span class="flex flex-col items-center justify-center w-48 py-2">
+        {% person i.name,
+        "eies",
+        i.role,
+        i.img %}
+      </span>
+    {% endfor %}
+  </div>
+</section>
 
-  <a href="https://github.com/tomreinert/minimal-11ty-tailwind-starter" class="inline-block uppercase rounded bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white text-sm">Download on github</a>
-</div>
+<section class="flex flex-col items-center py-8">
+  <h1 class="text-2xl">Circles</h1>
+
+  <div class="flex flex-col flex-wrap w-full px-8 py-8 md:flex-row">
+    <div class="w-full p-2 md:w-1/2">
+      <div class="px-8 py-4 bg-gray-200">
+        <h2 class="text-xl">Electrical</h2>
+        <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              repellat consequatur repellendus iusto et fuga quasi, dicta nisi
+              voluptatum maiores aut officiis a, eaque distinctio voluptatem!
+              Cum unde ut repudiandae.
+            </h3>
+      </div>
+    </div>
+
+    <div class="w-full p-2 md:w-1/2">
+      <div class="px-8 py-4 bg-gray-200">
+        <h2 class="text-xl">Electrical</h2>
+        <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              repellat consequatur repellendus iusto et fuga quasi, dicta nisi
+              voluptatum maiores aut officiis a, eaque distinctio voluptatem!
+              Cum unde ut repudiandae.
+            </h3>
+      </div>
+    </div>
+
+    <div class="w-full p-2 md:w-1/2">
+      <div class="px-8 py-4 bg-gray-200">
+        <h2 class="text-xl">Electrical</h2>
+        <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              repellat consequatur repellendus iusto et fuga quasi, dicta nisi
+              voluptatum maiores aut officiis a, eaque distinctio voluptatem!
+              Cum unde ut repudiandae.
+            </h3>
+      </div>
+    </div>
+
+    <div class="w-full p-2 md:w-1/2">
+      <div class="px-8 py-4 bg-gray-200">
+        <h2 class="text-xl">Electrical</h2>
+        <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              repellat consequatur repellendus iusto et fuga quasi, dicta nisi
+              voluptatum maiores aut officiis a, eaque distinctio voluptatem!
+              Cum unde ut repudiandae.
+            </h3>
+      </div>
+    </div>
+  </div>
+</section>

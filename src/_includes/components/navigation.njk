@@ -1,18 +1,20 @@
-<nav class="flex items-center justify-between flex-wrap px-5 py-3 border-b">
-  <a href="/" class="font-semibold text-xl tracking-tight">My Page</a>
-
-  {% set navPages = collections.all | eleventyNavigation %}
-  <ul>
-    {% for entry in navPages %}
-      <li class="inline">
-        <a
-         href="{{ entry.url }}"
-         class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block
-         {{'bg-black text-white' if entry.url in page.url
-         else 'text-gray-700 hover:text-gray-900'}}">
-         {{ entry.title }}
-       </a>
-      </li>
-    {% endfor %}
- </ul>
+<nav class="absolute z-10 flex flex-row flex-wrap items-center justify-end w-full px-8 py-4">
+  <h3 class="px-2">
+    <a href="/"> Home </a>
+  </h3>
+  <h3 class="px-2">
+    <a href="/electronic"> Electronic </a>
+  </h3>
+  <h3 class="px-2">
+    <a href="/power"> Power </a>
+  </h3>
+  <h3 class="px-2">
+    <a href="/software"> Software </a>
+  </h3>
+  <h3 class="px-2">
+    <a href="/tele"> Telecommunication </a>
+  </h3>
+  <h3 class="px-2">
+    <a href="/contact"> Contact us </a>
+  </h3>
 </nav>

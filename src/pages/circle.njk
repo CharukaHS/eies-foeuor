@@ -1,0 +1,42 @@
+---
+pagination:
+  data: circles
+  size: 1
+  alias: circle
+permalink: "{{circle.link}}/index.html"
+title: {{circle.name}}
+layout: layouts/circle.njk
+---
+
+<div class="py-4 pl-8 text-3xl">
+  <h1>{{circle.name}} Circle</h1>
+</div>
+
+<div class="w-full mb-8 h-72">
+  {# <img src="tele.jpg" alt="" class="object-cover w-full h-full"/> #}
+  {% responsiveimage circle.banner,
+      circle.name,
+      "100vw",
+      "object-cover w-full h-full", true %}
+</div>
+
+<div
+      class="container px-16 m-auto text-justify md:px-24 lg:px-32"
+      style="text-align-last: center"
+    >
+  {{circle.description}}
+</div>
+
+<div class="text-center">
+  <h2>Our community</h2>
+  <div class="flex flex-row flex-wrap justify-center">
+    {% for i in circle.committee %}
+      <span class="flex flex-col items-center justify-center w-48 py-2">
+        {% person i.name,
+        circle.link,
+        i.role,
+        i.img %}
+      </span>
+    {% endfor %}
+  </div>
+</div>
