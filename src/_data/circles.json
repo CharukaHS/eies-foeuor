@@ -4,7 +4,9 @@
     "link": "electronic",
     "order": 1,
     "banner": "tronic.jpg",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut odit ut aliquam quibusdam velit est earum blanditiis nihil non temporibus accusamus nostrum, quis repellat vero delectus natus reprehenderit! Ex!",
+    "description": "The electronic circle is a platform designed to represent, support, and motivate the students who are interested in electronics and willing to specialize in the field of electronics.",
+    "mission": "With the support of academic staff and the industry, to open up opportunities for students and gain the requisite skills to fit into the field of electronic engineering.",
+    "vision": "Encourage the students to learn about electronic engineering, improve their skills, and provide resource persons to the field of electronic engineering.",
     "committee": [
       {
         "role": "President",
@@ -43,7 +45,9 @@
     "link": "power",
     "order": 2,
     "banner": "power.jpg",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut odit ut aliquam quibusdam velit est earum blanditiis nihil non temporibus accusamus nostrum, quis repellat vero delectus natus reprehenderit! Ex!",
+    "description": "The Power Circle of EIES is a platform intended to promote and support the exchange of information on Power Engineering among members and other interested parties. The main objective of Power Circle is to bring the academic staff, students and industry to a common platform, and there by prepare students for careers in Power Engineering. The Power Circle is active in coordinating various activities that are instrumental and conductive to the achievement of the objects stated above, such as workshops, talks and presentations, seminars, etc.",
+    "mission": "Introducing new trends of power sector and help students to achieve successful careers in power sector by organizing different programs like workshops, seminars and presentations.",
+    "vision": "Preparing students for good power engineering careers by working as common platform between industry and university",
     "committee": [
       {
         "role": "President",
@@ -82,7 +86,9 @@
     "link": "software",
     "order": 3,
     "banner": "soft.jpg",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut odit ut aliquam quibusdam velit est earum blanditiis nihil non temporibus accusamus nostrum, quis repellat vero delectus natus reprehenderit! Ex!",
+    "description": "The software circle is a platform designed to represent the students specializing in software in DEIE and the software field.",
+    "mission": "To open up the opportunities for the students with the help of academic staff and the industry, to acquire the needed knowledge and befit to the software industry.",
+    "vision": "To inspire students about software engineering and to provide opportunities to develop their skills as best suited for the software industry.",
     "committee": [
       {
         "role": "President",
@@ -121,7 +127,9 @@
     "link": "tele",
     "order": 4,
     "banner": "tele.jpg",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut odit ut aliquam quibusdam velit est earum blanditiis nihil non temporibus accusamus nostrum, quis repellat vero delectus natus reprehenderit! Ex!",
+    "description": "Telecommunication and Networking circle is one of the key circle of Electrical and Information Engineering Society (EIES), as most of the students tend to specialize in the telecommunication field as their career. The main objective of the circle is to gather students around the circle and share the knowledge regarding the field and acknowledge them in the current and future opportunities of the field. Telecommunication is a rapidly growing field with new technologies evolving day by day. Thus, it is very timely to share the prominent knowledge regarding new directions well as the available technologies. Accordingly, the workshops are arranged by the circle and that will be a great support for the students to gain knowledge about the field. Also the circle itself urges the students to participate in various competitions to make their knowledge updated and sharpen with the moving telecommunication field. Above all, another main aspect of the circle is to seek for the job and training opportunities for the undergraduates collaborating with the passed out senior engineers who are already established in the telecommunication field.",
+    "mission": "Our Mission is to create opportunities to gather knowledge and guide the students of the prominent possibilities of the Telecommunication and Networking field.",
+    "vision": "To become the heart of ingenuity in Telecommunication and Networking skills and strengths of the EIES",
     "committee": [
       {
         "role": "President",

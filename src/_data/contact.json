@@ -1,20 +1,39 @@
 {
-    "items": [
-        {
-            "name": "test@example.com",
-            "link": "mailto:test@example.com"
-        },
-        {
-            "name": "Twitter",
-            "link": "https://twitter.com/…"
-        },
-        {
-            "name": "GitHub",
-            "link": "https://github.com/…"
-        },
-        {
-            "name": "CodePen",
-            "link": "https://codepen.io/…"
-        }
-    ]
+  "email": "eiesruhuna@gmail.com",
+  "address": [
+    "EIES,",
+    "Faculty of Engineering,",
+    "Hapugala,",
+    "Galle,",
+    "Sri Lanka."
+  ],
+  "sm": [
+    {
+      "title": "Facebook",
+      "link": "https://www.facebook.com/EIESUOR",
+      "icon": "logo-facebook"
+    },
+    {
+      "title": "LinkedIn",
+      "link": "https://www.linkedin.com/company/electrical-and-information-engineering-society-university-of-ruhuna",
+      "icon": "logo-linkedin"
+    }
+  ],
+  "telephone": [
+    {
+      "name": "Shashika",
+      "role": "EIES President",
+      "number": "071 089 0416"
+    },
+    {
+      "name": "Harith",
+      "role": "EIES Vice President",
+      "number": "071 949 9838"
+    },
+    {
+      "name": "Iresh",
+      "role": "EIES Social Secretary",
+      "number": "076 662 8486"
+    }
+  ]
 }
