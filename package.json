@@ -10,7 +10,9 @@
     "serve": "npm-run-all clean --parallel serve:*",
     "build:webpack": "webpack --mode production",
     "build:eleventy": "ELEVENTY_ENV=production eleventy",
-    "build": "NODE_ENV=production run-s clean build:*"
+    "build:eleventy-gh": "ELEVENTY_ENV=production eleventy --pathprefix 'eies-foeuor'",
+    "build": "NODE_ENV=production run-s clean build:webpack build:eleventy",
+    "build-gh": "NODE_ENV=production run-s clean build:webpack build:eleventy-gh"
   },
   "keywords": [],
   "author": "",
