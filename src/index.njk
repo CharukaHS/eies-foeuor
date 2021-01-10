@@ -2,26 +2,23 @@
 title: EIES University of Ruhuna
 layout: layouts/base.njk
 ---
-<section id="landing" class="flex flex-col w-full h-screen">
-  <div class="flex flex-row items-center justify-center flex-grow">
-    <div class="w-1/2 px-8">
-      {% responsiveimage "./src/images/eies.png",
-      "EIES Logo",
-      "8rem",
-      "w-32 mb-8" %}
-      <h1 class="text-4xl">Electrical and Information Engineering Society</h1>
-      <p>{{eies.test}}</p>
-    </div>
-    <div class="flex w-1/2 h-full px-8">
-      <div
-            class="self-center w-full bg-gray-200 shadow h-4/6 rounded-2xl"
-          ></div>
-    </div>
-  </div>
+<section class="flex flex-col w-full h-screen">
+  {% include "./_includes/components/slideshow.njk" %}
+  <span class="absolute px-12 py-4 bg-primary top-1/2">
+    <h1 class="text-5xl text-white font-title">Electrical and Information Engineering Society</h1>
+    <h2 class="text-xl text-white">Faculty of Engineering, University of Ruhuna</h2>
+  </span>
 </section>
 
-<section class="flex flex-col px-8 py-8 text-white bg-blue-700">
-  <div class="mb-4 text-justify" style="text-align-last: center;">
+<section class="flex flex-col w-full px-20 py-12 bg-background">
+  <h1 class="pb-4 text-3xl text-center font-title">About Us</h1>
+  <div class="flex flex-row justify-evenly">
+    {% responsiveimage "./src/images/eies.png",
+    "EIES Logo",
+    "8rem",
+    "w-48 mb-8" %}
+  </div>
+  <div class="mb-4 text-lg text-justify font-text" style="text-align-last: center;">
         Electrical and Information Engineering Society (EIES) is the main society within the department that 
         consists of the academic staff and students. The academic staff of the department facilitates to EIES 
         as an advisory board and the students lead each activity organized by the society. The goal of the 
@@ -29,6 +26,10 @@ layout: layouts/base.njk
         them to improve not only academic and technical skills but also their leadership interpersonal and 
         professional qualities.
     </div>
+</section>
+
+<section class="flex flex-col px-8 py-8 text-white bg-secondry">
+  <h1 class="pb-4 text-3xl text-center font-title">{{eies.year}} Committee</h1>
   <div class="flex flex-row flex-wrap self-center justify-around w-5/6">
     {% for i in eies.committee %}
       <span class="flex flex-col items-center justify-center w-48 py-2">
@@ -41,56 +42,15 @@ layout: layouts/base.njk
   </div>
 </section>
 
-<section class="flex flex-col items-center py-8">
-  <h1 class="text-2xl">Circles</h1>
+<section class="flex flex-col items-center py-8 bg-background">
+  <h1 class="pb-4 text-3xl text-center font-title">Circles</h1>
 
-  <div class="flex flex-col flex-wrap w-full px-8 py-8 md:flex-row">
-    <div class="w-full p-2 md:w-1/2">
-      <div class="px-8 py-4 bg-gray-200">
-        <h2 class="text-xl">Electrical</h2>
-        <h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              repellat consequatur repellendus iusto et fuga quasi, dicta nisi
-              voluptatum maiores aut officiis a, eaque distinctio voluptatem!
-              Cum unde ut repudiandae.
-            </h3>
-      </div>
-    </div>
-
-    <div class="w-full p-2 md:w-1/2">
-      <div class="px-8 py-4 bg-gray-200">
-        <h2 class="text-xl">Electrical</h2>
-        <h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              repellat consequatur repellendus iusto et fuga quasi, dicta nisi
-              voluptatum maiores aut officiis a, eaque distinctio voluptatem!
-              Cum unde ut repudiandae.
-            </h3>
-      </div>
-    </div>
-
-    <div class="w-full p-2 md:w-1/2">
-      <div class="px-8 py-4 bg-gray-200">
-        <h2 class="text-xl">Electrical</h2>
-        <h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              repellat consequatur repellendus iusto et fuga quasi, dicta nisi
-              voluptatum maiores aut officiis a, eaque distinctio voluptatem!
-              Cum unde ut repudiandae.
-            </h3>
-      </div>
-    </div>
-
-    <div class="w-full p-2 md:w-1/2">
-      <div class="px-8 py-4 bg-gray-200">
-        <h2 class="text-xl">Electrical</h2>
-        <h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              repellat consequatur repellendus iusto et fuga quasi, dicta nisi
-              voluptatum maiores aut officiis a, eaque distinctio voluptatem!
-              Cum unde ut repudiandae.
-            </h3>
-      </div>
-    </div>
+  <div class="flex flex-row flex-wrap w-full px-8 py-8 justify-evenly">
+    {% for i in circles %}
+      {% circle i.name,
+      i.link,
+      i.banner %}
+    {% endfor %}
   </div>
+
 </section>

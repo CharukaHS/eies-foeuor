@@ -2,15 +2,46 @@
 title: Contact
 layout: layouts/base.njk
 permalink: /contact/
-eleventyNavigation:
-  key: Contact
-  order: 3
 ---
 
-<ul>
-     {% for item in contact.items %}
-     <li><a href="{{ item.link }}">{{ item.name }}</a></li>
-     {% endfor %}
-</ul>
-
-<p class="mt-4">☝️ This page gets its content from <code>src/_data/contact.json</code></p>
+<div class="flex flex-row items-center justify-center w-full min-h-screen px-20">
+  <div class="flex flex-col items-center justify-center w-full md:w-1/2">
+    {% for i in contact.telephone %}
+      <div class="flex flex-row pb-4">
+        <img src="/icons/call.svg" alt="tp" class="w-4">
+        <div class="pl-4">
+          <h3 class="text-lg">{{i.name}}
+            <span class="text-sm text-gray-500">{{i.role}}</span>
+          </h3>
+          <h2 class="text-xl leading-none">{{i.number}}</h2>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="flex flex-col items-center justify-center w-full md:w-1/2">
+    <div>
+      <div class="flex flex-row pb-4">
+        <img src="/icons/mail.svg" alt="tp" class="w-4">
+        <div class="pl-4">
+          {% for item in contact.address %}
+            <h2 class="text-lg leading-none">{{item}}</h2>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="flex flex-row pb-4">
+        <img src="/icons/mail.svg" alt="tp" class="w-4">
+        <div class="pl-4">
+          <h2 class="text-lg leading-none">{{contact.email}}</h2>
+        </div>
+      </div>
+      {% for i in contact.sm %}
+        <div class="flex flex-row pb-4 cursor-pointer" onclick="window.location.href = '{{i.link}}'">
+          <img src="/icons/{{i.icon}}.svg" alt="tp" class="w-4">
+          <div class="pl-4">
+            <h2 class="text-lg leading-none">{{i.title}}</h2>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

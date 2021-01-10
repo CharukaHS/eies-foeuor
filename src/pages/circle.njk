@@ -4,32 +4,44 @@ pagination:
   size: 1
   alias: circle
 permalink: "{{circle.link}}/index.html"
-title: {{circle.name}}
+eleventyComputed:
+  title: "{{circle.name}} Circle - EIES"
 layout: layouts/circle.njk
 ---
 
-<div class="py-4 pl-8 text-3xl">
-  <h1>{{circle.name}} Circle</h1>
-</div>
-
-<div class="w-full mb-8 h-72">
-  {# <img src="tele.jpg" alt="" class="object-cover w-full h-full"/> #}
+<div class="relative w-full h-80">
+  <span class="absolute px-12 py-4 bg-primary top-1/2">
+    <h1 class="text-5xl text-white font-title">{{circle.name}} circle</h1>
+  </span>
   {% responsiveimage circle.banner,
       circle.name,
       "100vw",
       "object-cover w-full h-full", true %}
 </div>
 
-<div
-      class="container px-16 m-auto text-justify md:px-24 lg:px-32"
-      style="text-align-last: center"
-    >
-  {{circle.description}}
-</div>
+<section class="flex flex-col w-full px-20 py-12 bg-background">
+  <h1 class="pb-4 text-3xl text-center font-title">About {{circle.name}} Circle</h1>
 
-<div class="text-center">
-  <h2>Our community</h2>
-  <div class="flex flex-row flex-wrap justify-center">
+  <div class="container px-16 m-auto text-justify md:px-24 lg:px-32 font-text"
+      style="text-align-last: center">
+    {{circle.description}}
+  </div>
+
+  <div class="flex flex-row mt-16">
+    <div class="flex flex-col items-center justify-center w-full px-12 md:w-1/2">
+      <h2 class="pb-4 text-2xl text-center font-title">Mission</h2>
+      <div class="mb-4 text-justify font-text" style="text-align-last: center;">{{circle.mission}}</div>
+    </div>
+    <div class="flex flex-col items-center justify-center w-full px-12 md:w-1/2">
+      <h2 class="pb-4 text-2xl text-center font-title">Vision</h2>
+      <div class="mb-4 text-justify font-text" style="text-align-last: center;">{{circle.vision}}</div>
+    </div>
+  </div>
+</section>
+
+<section class="flex flex-col px-8 py-8 text-white bg-secondry">
+  <h1 class="pb-4 text-3xl text-center font-title">{{circle.name}} Committee - {{eies.year}}</h1>
+  <div class="flex flex-row flex-wrap self-center justify-around w-5/6">
     {% for i in circle.committee %}
       <span class="flex flex-col items-center justify-center w-48 py-2">
         {% person i.name,
@@ -39,4 +51,4 @@ layout: layouts/circle.njk
       </span>
     {% endfor %}
   </div>
-</div>
+</section>
