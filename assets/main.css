@@ -627,10 +627,6 @@ video {
   font-family: Roboto, sans-serif;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
 .h-32 {
   height: 8rem;
 }
@@ -691,6 +687,10 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mb-8 {
@@ -765,6 +765,14 @@ video {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pr-12 {
+  padding-right: 3rem;
 }
 
 .pt-20 {
@@ -914,9 +922,17 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 
   .md\:w-1\/2 {
