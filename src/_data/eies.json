@@ -2,6 +2,21 @@
   "year": 2020,
   "committee": [
     {
+      "role": "Senior Treasurer",
+      "name": "Dr. Subodha Gunawardena",
+      "img": "senior_treasurer.png"
+    },
+    {
+      "role": "Committee (Staff)",
+      "name": "Dr. N. W. Prins",
+      "img": "committee5.jpg"
+    },
+    {
+      "role": "Committee (Graduated)",
+      "name": "Sameera Shaman",
+      "img": "committee0.jpeg"
+    },
+    {
       "role": "President",
       "name": "Shashika Bandaranayaka",
       "img": "president.jpeg"
