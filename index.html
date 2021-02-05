@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>EIES University of Ruhuna</title>
     <link rel="stylesheet" type="text/css" href="/eies-foeuor/assets/main.css"/>
   </head>
@@ -27,15 +30,29 @@
 </nav>
     <main>
       <section class="flex flex-col w-full h-screen">
-  
-
-<div class="w-screen h-screen">
-  <picture>
+  <div class="relative w-screen h-screen">
+  <picture class="carousel-content absolute h-screen transition-opacity duration-500 ease-linear">
         <source type="image/webp" srcset="/img/e765616b-1280.webp 1280w" sizes="100vw">
   <source type="image/jpeg" srcset="/img/e765616b-1280.jpeg 1280w" sizes="100vw">
         <img
           src="/img/e765616b-1280.jpeg"
           alt="xbotix"
+          class="h-full object-cover w-screen">
+      </picture>
+  <picture class="carousel-content absolute h-screen transition-opacity duration-500 ease-linear">
+        <source type="image/webp" srcset="/img/677fd308-1280.webp 1280w" sizes="100vw">
+  <source type="image/jpeg" srcset="/img/677fd308-1280.jpeg 1280w" sizes="100vw">
+        <img
+          src="/img/677fd308-1280.jpeg"
+          alt="agm 2020"
+          class="h-full object-cover w-screen">
+      </picture>
+  <picture class="carousel-content absolute h-screen transition-opacity duration-500 ease-linear">
+        <source type="image/webp" srcset="/img/d6f52078-1280.webp 1280w" sizes="100vw">
+  <source type="image/jpeg" srcset="/img/d6f52078-1280.jpeg 1280w" sizes="100vw">
+        <img
+          src="/img/d6f52078-1280.jpeg"
+          alt="eminence"
           class="h-full object-cover w-screen">
       </picture>
 </div>
@@ -72,6 +89,63 @@
 <section class="flex flex-col px-8 py-8 text-white bg-secondry">
   <h1 class="pb-4 text-3xl text-center font-title">2020 Committee</h1>
   <div class="flex flex-row flex-wrap self-center justify-around w-5/6">
+    
+      <span class="flex flex-col items-center justify-center w-48 py-2">
+        
+    <span class="flex flex-col items-center justify-center w-48 py-2 text-center">
+      <picture>
+      <source type="image/webp" srcset="/img/4a0f3842-300.webp 300w" >
+<source type="image/jpeg" srcset="/img/4a0f3842-300.jpeg 300w" >
+        <img
+          src="/img/4a0f3842-300.jpeg"
+          width="300"
+          height="302"
+          alt=""
+          class="w-32 h-32 object-cover rounded-full">
+      </picture>
+      <h3 class="mt-4">Senior Treasurer</h3>
+      <h2 class="text-lg leading-none">Dr. Subodha Gunawardena</h2>
+    </span>
+    
+      </span>
+    
+      <span class="flex flex-col items-center justify-center w-48 py-2">
+        
+    <span class="flex flex-col items-center justify-center w-48 py-2 text-center">
+      <picture>
+      <source type="image/webp" srcset="/img/96c5db64-300.webp 300w" >
+<source type="image/jpeg" srcset="/img/96c5db64-300.jpeg 300w" >
+        <img
+          src="/img/96c5db64-300.jpeg"
+          width="300"
+          height="300"
+          alt=""
+          class="w-32 h-32 object-cover rounded-full">
+      </picture>
+      <h3 class="mt-4">Committee (Staff)</h3>
+      <h2 class="text-lg leading-none">Dr. N. W. Prins</h2>
+    </span>
+    
+      </span>
+    
+      <span class="flex flex-col items-center justify-center w-48 py-2">
+        
+    <span class="flex flex-col items-center justify-center w-48 py-2 text-center">
+      <picture>
+      <source type="image/webp" srcset="/img/b5fea1c4-300.webp 300w" >
+<source type="image/jpeg" srcset="/img/b5fea1c4-300.jpeg 300w" >
+        <img
+          src="/img/b5fea1c4-300.jpeg"
+          width="300"
+          height="301"
+          alt=""
+          class="w-32 h-32 object-cover rounded-full">
+      </picture>
+      <h3 class="mt-4">Committee (Graduated)</h3>
+      <h2 class="text-lg leading-none">Sameera Shaman</h2>
+    </span>
+    
+      </span>
     
       <span class="flex flex-col items-center justify-center w-48 py-2">
         
@@ -383,6 +457,7 @@
     <a href="https://github.com/CharukaHS/eies-foeuor">Made with 11ty</a>
   </h3>
 </footer>
-    <script src="/eies-foeuor/assets/main.css"></script>
+    <script src="/eies-foeuor/assets/main.js"></script>
+    <script src="/eies-foeuor/js/carousel.js"></script>
   </body>
 </html>

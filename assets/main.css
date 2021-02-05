@@ -850,6 +850,20 @@ video {
   z-index: 10;
 }
 
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.ease-linear {
+  transition-timing-function: linear;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 @-webkit-keyframes spin {
   to {
     transform: rotate(360deg);
