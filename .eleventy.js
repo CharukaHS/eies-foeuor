@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addPassthroughCopy("src/icons");
+  eleventyConfig.addPassthroughCopy("src/js");
 
   const { DateTime } = require("luxon");
 
@@ -64,7 +65,7 @@ module.exports = function (eleventyConfig) {
   // slideshow
   eleventyConfig.addNunjucksAsyncShortcode(
     "slide",
-    async (src, id, alt = "image") => {
+    async (src, alt = "image") => {
       src = `./src/images/slideshow/${src}`;
 
       let metadata = await Image(src, {
@@ -75,7 +76,7 @@ module.exports = function (eleventyConfig) {
 
       let lowsrc = metadata.jpeg[0];
 
-      return `<picture>
+      return `<picture class="carousel-content absolute h-screen transition-opacity duration-500 ease-linear">
       ${Object.values(metadata)
         .map((imageFormat) => {
           return `  <source type="image/${
