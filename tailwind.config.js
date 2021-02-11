@@ -12,15 +12,21 @@ module.exports = {
   theme: {
     backgroundColor: (theme) => ({
       ...theme("colors"),
-      primary: "#1E3D58",
-      secondry: "#057DCD",
+      primary: "#131b4b",
+      secondry: "#fe8f00",
       thirdary: "#43B0F1",
-      background: "#E8EEF1",
+      background: "#FFFFFF",
     }),
     extend: {
       fontFamily: {
         title: ["Bebas Neue", "sans"],
         text: ["Roboto", "sans-serif"],
+      },
+      textColor: {
+        gold: "#fe8f00",
+      },
+      borderColor: {
+        gold: "#fe8f00",
       },
     },
   },

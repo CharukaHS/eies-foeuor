@@ -123,7 +123,7 @@ module.exports = function (eleventyConfig) {
           width="${lowsrc.width}"
           height="${lowsrc.height}"
           alt=""
-          class="w-32 h-32 object-cover rounded-full">
+          class="w-32 h-32 object-cover rounded-full border-2 border-gold">
       </picture>
       <h3 class="mt-4">${role}</h3>
       <h2 class="text-lg leading-none">${name}</h2>

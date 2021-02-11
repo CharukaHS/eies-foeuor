@@ -4,13 +4,20 @@ layout: layouts/base.njk
 ---
 <section class="flex flex-col w-full h-screen">
   {% include "./_includes/components/slideshow.njk" %}
-  <span class="absolute px-12 py-4 bg-primary top-1/2">
-    <h1 class="text-5xl text-white font-title">Electrical and Information Engineering Society</h1>
-    <h2 class="text-xl text-white">Faculty of Engineering, University of Ruhuna</h2>
+  <span class="absolute px-12 py-8 bg-primary top-1/4 md:top-1/2">
+    <h1 class="text-5xl text-white font-title">
+      <span class="text-gold">E</span>lectrical and <span class="text-gold">I</span>nformation <span class="text-gold">E</span>ngineering <span class="text-gold">S</span>ociety</h1>
+    <h2 class="text-xl text-white font-text">Faculty of Engineering, University of Ruhuna</h2>
+
+    <div class="flex flex-row flex-wrap mt-8">
+      <a href="#about" class="px-4 py-2 mt-2 mr-4 text-white border-2 rounded cursor-pointer border-gold text-md border-md font-text">Learn More</a>
+      <a href="#circles" class="px-4 py-2 mt-2 mr-4 text-white border-2 border-white rounded-sm cursor-pointer text-md border-md font-text">Circles</a>
+      <a href="#contact" class="px-4 py-2 mt-2 mr-4 text-white border-2 border-white rounded-sm cursor-pointer text-md border-md font-text">Contact Us</a>
+    </div>
   </span>
 </section>
 
-<section class="flex flex-col w-full px-20 py-12 bg-background">
+<section id="about" class="flex flex-col w-full px-4 py-12 md:px-12 lg:px-20 bg-background">
   <h1 class="pb-4 text-3xl text-center font-title">About Us</h1>
   <div class="flex flex-row justify-evenly">
     {% responsiveimage "./src/images/eies.png",
@@ -28,7 +35,20 @@ layout: layouts/base.njk
     </div>
 </section>
 
-<section class="flex flex-col px-8 py-8 text-white bg-secondry">
+<section id="circles" class="flex flex-col items-center pt-2 pb-8 bg-background">
+  <h1 class="pb-4 text-3xl text-center font-title">Circles</h1>
+
+  <div class="flex flex-row flex-wrap w-full px-4 py-8 md:px-12 lg:px-20 justify-evenly">
+    {% for i in circles %}
+      {% circle i.name,
+      i.link,
+      i.banner %}
+    {% endfor %}
+  </div>
+
+</section>
+
+<section id="committee" class="flex flex-col px-8 py-8 text-white bg-primary">
   <h1 class="pb-4 text-3xl text-center font-title">{{eies.year}} Committee</h1>
   <div class="flex flex-row flex-wrap self-center justify-around w-5/6">
     {% for i in eies.committee %}
@@ -42,15 +62,47 @@ layout: layouts/base.njk
   </div>
 </section>
 
-<section class="flex flex-col items-center py-8 bg-background">
-  <h1 class="pb-4 text-3xl text-center font-title">Circles</h1>
+<section id="contact" class="flex flex-col items-center py-8 bg-white">
+  <h1 class="pb-4 text-3xl text-center font-title">Contact Info</h1>
 
-  <div class="flex flex-row flex-wrap w-full px-8 py-8 justify-evenly">
-    {% for i in circles %}
-      {% circle i.name,
-      i.link,
-      i.banner %}
-    {% endfor %}
-  </div>
-
-</section>
+  <div class="flex flex-col w-full px-4 md:flex-row justify-evenly md:px-12 lg:px-20">
+    <div class="flex flex-col items-center justify-center w-full md:w-1/2">
+      {% for i in contact.telephone %}
+        <div class="flex flex-row pb-4">
+          <img src="/icons/call.svg" alt="tp" class="w-4">
+          <div class="pl-4">
+            <h3 class="text-lg">{{i.name}}
+              <span class="text-sm text-gray-500">{{i.role}}</span>
+            </h3>
+            <h2 class="text-xl leading-none">{{i.number}}</h2>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="flex flex-col items-center justify-center w-full pt-8 md:w-1/2 md:pt-0">
+      <div>
+        <div class="flex flex-row pb-4">
+          <img src="/icons/mail.svg" alt="tp" class="w-4">
+          <div class="pl-4">
+            {% for item in contact.address %}
+              <h2 class="text-lg leading-none">{{item}}</h2>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="flex flex-row pb-4">
+          <img src="/icons/mail.svg" alt="tp" class="w-4">
+          <div class="pl-4">
+            <h2 class="text-lg leading-none">{{contact.email}}</h2>
+          </div>
+        </div>
+        {% for i in contact.sm %}
+          <div class="flex flex-row pb-4 cursor-pointer" onclick="window.location.href = '{{i.link}}'">
+            <img src="/icons/{{i.icon}}.svg" alt="tp" class="w-4">
+            <div class="pl-4">
+              <h2 class="text-lg leading-none">{{i.title}}</h2>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
