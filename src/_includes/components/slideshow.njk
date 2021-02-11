@@ -3,3 +3,12 @@
   {% slide "2.jpg", "agm 2020"%}
   {% slide "eminence.jpg", "eminence"%}
 </div>
+
+{# 
+in production build, tailwind only add the used css classes in njk files to the final css file.
+opacity-o class is not used in any other places other than in the slider, and in that time opacity-0
+class is added by the javascript function resulting opacity-0 is not available in final css file.
+
+To prevent that here's a hidden object with opacity-0 class
+#}
+<div class="hidden opacity-0"></div>
